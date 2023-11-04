@@ -16,7 +16,7 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: Colors.yellow[300],
+      backgroundColor: Colors.yellow[100],
       content: Container(
         height: 120,
         child: Column(
@@ -25,7 +25,7 @@ class DialogBox extends StatelessWidget {
             TextField(
               controller: controller,
               decoration: InputDecoration(
-                  border: OutlineInputBorder(), hintText: "Add todo"),
+                  border: InputBorder.none, hintText: "Add todo"),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

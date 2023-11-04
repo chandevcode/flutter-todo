@@ -33,7 +33,8 @@ class TodoTile extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(24),
           decoration: BoxDecoration(
-              color: Colors.yellow, borderRadius: BorderRadius.circular(12)),
+              color: Colors.yellow[200],
+              borderRadius: BorderRadius.circular(12)),
           child: Row(children: [
             Checkbox(
               value: taskCompleted,
@@ -43,6 +44,7 @@ class TodoTile extends StatelessWidget {
             Text(
               taskName,
               style: TextStyle(
+                  fontSize: 18,
                   decoration: taskCompleted
                       ? TextDecoration.lineThrough
                       : TextDecoration.none),
